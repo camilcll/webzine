@@ -24,7 +24,8 @@
 </head>
 
 <body>
-
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -106,7 +107,9 @@
         leadership y sont occupés par des femmes. On observe chez Google des chiffres moins exemplaires : 32% de femmes, 26% des
         postes de leadership et seulement 23% des postes en informatique occupés par la gente féminine.
       </p>
-
+      <img width="500" src="img/post-dan.png" alt="">
+      <p style="font-size: small;"><cite>Image & statistiques de Statista. *Total workforce = effectif de travail total (bleu), Leadership jobs = métiers
+      d'encadrement (orange), Tech jobs = métiers de l'informatique (turquoise)</cite></p>
       <p>
         Chez Stud’INFO, ces chiffres ne nous ont pas satisfait. Comment peut-on expliquer un tel écart ? Pourquoi le monde de
         l’informatique est-il si peu diversifié ?
@@ -410,6 +413,26 @@ IUT DECHAINE
             femme dans l’univers du numérique. Vous retrouverez le programme
             <a href="http://egalite-diversite.univ-lyon1.fr/2020/03/03/numerique-en-avant-toutes/">ici</a>. <br/>Engagez-vous !
           </p>
+          <h2 class="section-heading">Questionnaire sur cette édition pour les lecteurs</h2>
+          <p>Chers lecteurs,
+          <br><br>
+          Comme d'habitude chez Stud'INFO, nous voulons interagir avec vous.
+          Tout d'abord, pour faire de Stud'INFO un magazine qui répond à vos attentes, dîtes nous ce que vous avez pensé de
+          l'édition, que ce soit positif ou négatif. Nous sommes à l'écoute et prendrons en compte chacun de vos retours !
+          </p>
+          <p>
+          De plus, nous avons ajouté quelques questions à des fins statistiques : vos réponses permettront de dresser des
+          statistiques liées au sujet de cette édition. Nous vous les présenterons dans la prochaine édition, afin que l'on ait
+          une idée plus claire de la situation de la diversité du monde informatique dans la communauté des lecteurs de Stud'INFO
+          !
+          </p>
+          <p>
+          Merci d'avance pour toutes vos réponses et nous espérons vous revoir le mois prochain.</p>
+          <p>- L'équipe de Stud'Info.</p>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdrX2NcJt8UiMX8anbLSZPmeKAeBiToBeV2JyjYmjKTFBbq5g/viewform?embedded=true"
+            width="640" height="1450" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+
         </div>
       </div>
     </div>
@@ -460,6 +483,27 @@ IUT DECHAINE
 
   <!-- Custom scripts for this template -->
   <script src="js/clean-blog.min.js"></script>
+  <script defer async>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
 </body>
 
