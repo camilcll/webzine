@@ -2,7 +2,25 @@
  * Start Bootstrap - Clean Blog v5.0.8 (https://startbootstrap.com/template-overviews/clean-blog)
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
- */body{font-size:20px;color:#212529;font-family:Lora,'Times New Roman',serif}
+ */
+ 
+ html, body{
+     scroll-behavior: smooth;
+     overflow-x: hidden;
+ }
+
+ ::-webkit-scrollbar {
+  width: .6em;
+  height: .2em;
+}
+::-webkit-scrollbar-thumb {
+  background: grey;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+ 
+ body{font-size:20px;color:#212529;font-family:Lora,'Times New Roman',serif}
  
  
  p {
@@ -54,7 +72,9 @@
 }
 
 #myBtn:hover {
-  background-color: rgb(102, 91, 21);
+  background-color:#F7E35F;
+  color: rgb(63, 61, 61);
+  border: 1px solid rgb(63, 61, 61);
 }
  .qte blockquote {
      margin:1em;
