@@ -1,3 +1,3 @@
 # webzine
 
-https://nifty-austin-dce127.netlify.com/
+https://studinfo.netlify.app
